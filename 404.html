@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page Not Found — Engineering Partners</title>
+<meta name="description" content="The page you are looking for could not be found." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<meta name="theme-color" content="#060a14" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+<style>
+  .error-page {
+    min-height: calc(100dvh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .error-code {
+    font-size: 92px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, var(--blue-bright), #1c4fae);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .error-page h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-top: 18px;
+  }
+  .error-page p {
+    color: var(--text-dim);
+    font-size: 15px;
+    margin: 14px auto 0;
+    max-width: 46ch;
+  }
+  .error-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/index.html" class="logo">
+      <span class="mark">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+      </span>
+      <span class="word">ENGINEERING<small>PARTNERS</small></span>
+    </a>
+    <nav class="main-nav">
+      <a href="/index.html">HOME</a>
+      <a href="/capabilities.html">CAPABILITIES</a>
+      <a href="/government.html">GOVERNMENT</a>
+      <a href="/about.html">ABOUT US</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="error-page">
+    <div class="wrap">
+      <div class="error-code">404</div>
+      <h1>PAGE NOT FOUND</h1>
+      <p>The page you are looking for may have been moved, renamed, or no longer exists.</p>
+      <div class="error-actions">
+        <a href="/index.html" class="btn btn-primary">BACK TO HOME
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="/capabilities.html" class="btn btn-outline">VIEW CAPABILITIES
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="footer"></footer>
+<script src="/script.js"></script>
+<script src="/footer.js"></script>
+</body>
+</html>
